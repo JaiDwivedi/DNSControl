@@ -10,10 +10,6 @@ jobs:
   strategy:
     maxParallel: 3
     matrix: 
-      Windows:
-        OS: windows
-      OSX:
-        OS: darwin
       Linux:
         OS: linux
   steps:
