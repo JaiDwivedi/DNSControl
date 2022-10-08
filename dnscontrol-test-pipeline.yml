@@ -20,8 +20,8 @@ jobs:
     workingDirectory: $(wd)
     env:
       R53_DOMAIN: $(R53_DOMAIN)
-      R53_KEY_ID: $(AKIA6KFGVJVSZKPVDMZL)
-      R53_KEY: $(Dj82O9ROz0QD0Nus3Efimv7wvGWKEhrwYZzMtSwF)
+      R53_KEY_ID: $()
+      R53_KEY: $()
 
 - job: Azure
   steps:
@@ -29,9 +29,9 @@ jobs:
     - script: go test -v -verbose -provider AZURE_DNS
       workingDirectory: $(wd)
       env:
-        AZURE_CLIENT_ID: $(230323d0-b0c9-4f7a-9f9c-ac87bc393368)
-        AZURE_CLIENT_SECRET: $(B1x7Q~iALbe3gJBY-rj3IIbABx6JTTNdEuQRw)
+        AZURE_CLIENT_ID: $(28)
+        AZURE_CLIENT_SECRET: $(B1xNdEuQRw)
         AZURE_DOMAIN: $(AZ_DOMAIN)
         AZURE_RESOURCE_GROUP: $(blrRG)
-        AZURE_SUBSCRIPTION_ID: $(25e09744-4ac8-42ca-8565-4f1a27c632da)
-        AZURE_TENANT_ID: $(9c8a3322-d2e5-4737-a68f-a0c4f4902878)
+        AZURE_SUBSCRIPTION_ID: $(25ec632da)
+        AZURE_TENANT_ID: $(9c82878)
